@@ -1,0 +1,31 @@
+{
+    "name": "discord_bot_js-template",
+    "version": "1.0.0",
+    "description": "softdev backend ",
+    "main": "run.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon src/index.js",
+        "format": "prettier --write \"src/**/*.{js,jsx}\"",
+        "eslint": "eslint . --ext .js",
+        "prettier:base": "prettier ",
+        "prettier:check": "npm run prettier:base --list-different \"src/**/*.{js,jsx}\"",
+        "prettier:write": "npm run prettier:base --write \"src/**/*.{js,jsx}\"",
+        "prepare": "husky install"
+    },
+    "author": "CRUNZEX",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.27.2",
+        "discord": "^0.8.2",
+        "discord.js": "^13.6.0",
+        "dotenv": "^16.0.0"
+    },
+    "devDependencies": {
+        "eslint": "^7.30.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "husky": "^7.0.4",
+        "nodemon": "^2.0.15",
+        "prettier": "^2.6.1"
+    }
+}
